@@ -8,6 +8,72 @@ Light gray    #d3d4d6
 Off-white     #f6f6f6
 */
 
+/*--------------------  NAV  -----------------------*/
+
+#navbar {
+    background-color: #d3d4d6;
+}
+
+#navbar ul {
+    margin: 0;
+    padding: 0px;
+    text-align: right;
+    list-style: none;
+}
+
+#navbar ul li {
+    display: inline-block;
+    position: relative;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 15px;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+#navbar ul li:hover {
+    background-color: #bcaa96;
+}
+
+#navbar ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+#navbar ul li:hover ul {
+    display: block;
+}
+
+#navbar ul li ul li {
+    background: #bcaa96;
+    display: block;
+    text-align: left;
+}
+
+#navbar ul li ul li:hover {
+    background: #f6f6f6;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#navbar ul li ul li a {
+    text-decoration: none;
+    color: #3c8453;
+}
+
+
+
+
 /*--------------------  GLOBAL  -----------------------*/
 
 html {
@@ -67,7 +133,6 @@ a:hover {
 .content-wrapper {
     margin: 0 auto;
     padding: 30px;
-    /*max-width: 900px;*/
 }
 
 /*--------------------  ABOUT / PROFILE  -----------------------*/
@@ -75,7 +140,7 @@ a:hover {
     background: url(../images/domenico-loia-hGV2TfOh0ns-unsplash.jpg) center / cover;
     background-size: cover;
     content: "";
-    display: block;
+    display:block;
     height: 375px;
 }
 .resume-section {
@@ -85,10 +150,13 @@ a:hover {
     border-bottom: 2px dashed #d3d4d6; 
 }
 .download-link {
-    position: fixed;
+    position:fixed;
     top: 5px;
     left: 5px;
-    font-size: 1.5rem;
+    font-size: 1.5 rem;
+    margin-left: 25px;
+    padding-bottom: 5px;
+    
 }
 
 
